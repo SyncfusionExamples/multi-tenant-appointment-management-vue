@@ -1,0 +1,557 @@
+{
+  "visitTypes": [
+    "Consultation",
+    "Follow-up",
+    "Check-up",
+    "Emergency"
+  ],
+  "clinicStatuses": [
+    "Scheduled",
+    "Completed",
+    "Cancelled"
+  ],
+  "genders": [
+    "Female",
+    "Male",
+    "Other"
+  ],
+  "patientStatuses": [
+    "Active",
+    "Inactive"
+  ],
+  "doctors": [
+    {
+      "Id": "D1",
+      "Name": "Dr. John Smith",
+      "Specialty": "General Medicine",
+      "Color": "#4f46e5"
+    },
+    {
+      "Id": "D2",
+      "Name": "Dr. Sarah Wilson",
+      "Specialty": "Cardiology",
+      "Color": "#059669"
+    },
+    {
+      "Id": "D3",
+      "Name": "Dr. Michael Brown",
+      "Specialty": "Pediatrics",
+      "Color": "#d97706"
+    },
+    {
+      "Id": "D4",
+      "Name": "Dr. Emily Davis",
+      "Specialty": "Dermatology",
+      "Color": "#db2777"
+    }
+  ],
+  "clinicMonthlyTrend": [
+    {
+      "month": "Jan",
+      "appointments": 120
+    },
+    {
+      "month": "Feb",
+      "appointments": 145
+    },
+    {
+      "month": "Mar",
+      "appointments": 160
+    },
+    {
+      "month": "Apr",
+      "appointments": 138
+    },
+    {
+      "month": "May",
+      "appointments": 175
+    },
+    {
+      "month": "Jun",
+      "appointments": 190
+    }
+  ],
+  "salonStatuses": [
+    "Confirmed",
+    "In Progress",
+    "Completed",
+    "Cancelled"
+  ],
+  "membershipOptions": [
+    "None",
+    "Silver",
+    "Gold",
+    "Platinum"
+  ],
+  "customerTypes": [
+    "New",
+    "Regular",
+    "VIP"
+  ],
+  "stylists": [
+    {
+      "Id": "S1",
+      "Name": "Sara Kim",
+      "Role": "Senior Stylist",
+      "Color": "#7c3aed"
+    },
+    {
+      "Id": "S2",
+      "Name": "Jordan Blake",
+      "Role": "Colorist",
+      "Color": "#0891b2"
+    },
+    {
+      "Id": "S3",
+      "Name": "Maya Patel",
+      "Role": "Nail Technician",
+      "Color": "#e11d48"
+    },
+    {
+      "Id": "S4",
+      "Name": "Leo Rossi",
+      "Role": "Barber",
+      "Color": "#65a30d"
+    }
+  ],
+  "services": [
+    {
+      "Name": "Haircut",
+      "Duration": 45,
+      "Price": 40
+    },
+    {
+      "Name": "Hair Coloring",
+      "Duration": 120,
+      "Price": 120
+    },
+    {
+      "Name": "Manicure",
+      "Duration": 30,
+      "Price": 25
+    },
+    {
+      "Name": "Facial",
+      "Duration": 60,
+      "Price": 70
+    },
+    {
+      "Name": "Beard Trim",
+      "Duration": 20,
+      "Price": 15
+    }
+  ],
+  "salonDailyTrend": [
+    {
+      "date": "Nov 16",
+      "bookings": 18,
+      "revenue": 720
+    },
+    {
+      "date": "Nov 17",
+      "bookings": 22,
+      "revenue": 880
+    },
+    {
+      "date": "Nov 18",
+      "bookings": 19,
+      "revenue": 760
+    },
+    {
+      "date": "Nov 19",
+      "bookings": 25,
+      "revenue": 1000
+    },
+    {
+      "date": "Nov 20",
+      "bookings": 28,
+      "revenue": 1120
+    },
+    {
+      "date": "Nov 21",
+      "bookings": 31,
+      "revenue": 1240
+    },
+    {
+      "date": "Nov 22",
+      "bookings": 27,
+      "revenue": 1080
+    }
+  ],
+  "patients": [
+    {
+      "PatientID": "P1001",
+      "PatientName": "Emma Johnson12",
+      "Age": 30,
+      "Gender": "Female",
+      "DoctorAssigned": "Dr. John Smith",
+      "LastVisitDate": "2026-11-23T13:30:00.000Z",
+      "Status": "Active"
+    },
+    {
+      "PatientID": "P1002",
+      "PatientName": "Noah Smith",
+      "Age": 52,
+      "Gender": "Male",
+      "DoctorAssigned": "Dr. Sarah Wilson",
+      "LastVisitDate": "2026-11-11T03:30:00.000Z",
+      "Status": "Active"
+    },
+    {
+      "PatientID": "P1003",
+      "PatientName": "Olivia Brown",
+      "Age": 8,
+      "Gender": "Female",
+      "DoctorAssigned": "Dr. Michael Brown",
+      "LastVisitDate": "2026-11-21T03:30:00.000Z",
+      "Status": "Active"
+    },
+    {
+      "PatientID": "P1004",
+      "PatientName": "Liam Davis",
+      "Age": 45,
+      "Gender": "Male",
+      "DoctorAssigned": "Dr. Emily Davis",
+      "LastVisitDate": "2026-10-24T03:30:00.000Z",
+      "Status": "Inactive"
+    },
+    {
+      "PatientID": "P1005",
+      "PatientName": "Ava Martinez",
+      "Age": 61,
+      "Gender": "Female",
+      "DoctorAssigned": "Dr. Sarah Wilson",
+      "LastVisitDate": "2026-11-15T03:30:00.000Z",
+      "Status": "Active"
+    },
+    {
+      "PatientID": "P1006",
+      "PatientName": "Ethan Garcia",
+      "Age": 27,
+      "Gender": "Male",
+      "DoctorAssigned": "Dr. John Smith",
+      "LastVisitDate": "2026-10-09T03:30:00.000Z",
+      "Status": "Inactive"
+    },
+    {
+      "PatientID": "P1008",
+      "PatientName": "Mason Clark",
+      "Age": 39,
+      "Gender": "Male",
+      "DoctorAssigned": "Dr. Emily Davis",
+      "LastVisitDate": "2026-11-08T03:30:00.000Z",
+      "Status": "Active"
+    },
+    {
+      "PatientID": "P1009",
+      "PatientName": "Test Patient",
+      "Age": 20,
+      "Gender": "Female",
+      "DoctorAssigned": "Dr. John Smith",
+      "LastVisitDate": "2026-11-23T14:30:00.000Z",
+      "Status": "Active"
+    }
+  ],
+  "clinicAppointments": [
+    {
+      "Id": "A2001",
+      "PatientID": "P1001",
+      "Subject": "Emma Johnson12",
+      "Doctor": "Dr. Sarah Wilson",
+      "StartTime": "2026-11-23T03:30:00.000Z",
+      "EndTime": "2026-11-23T04:00:00.000Z",
+      "VisitType": "Consultation",
+      "Status": "Scheduled"
+    },
+    {
+      "Id": "A2002",
+      "PatientID": "P1002",
+      "Subject": "Noah Smith",
+      "Doctor": "Dr. Sarah Wilson",
+      "StartTime": "2026-11-23T04:30:00.000Z",
+      "EndTime": "2026-11-23T05:00:00.000Z",
+      "VisitType": "Follow-up",
+      "Status": "Scheduled"
+    },
+    {
+      "Id": "A2003",
+      "PatientID": "P1003",
+      "Subject": "Olivia Brown",
+      "Doctor": "Dr. Michael Brown",
+      "StartTime": "2026-11-23T05:30:00.000Z",
+      "EndTime": "2026-11-23T06:00:00.000Z",
+      "VisitType": "Check-up",
+      "Status": "Completed"
+    },
+    {
+      "Id": "A2004",
+      "PatientID": "P1008",
+      "Subject": "Mason Clark",
+      "Doctor": "Dr. Emily Davis",
+      "StartTime": "2026-11-24T03:30:00.000Z",
+      "EndTime": "2026-11-24T04:00:00.000Z",
+      "VisitType": "Consultation",
+      "Status": "Scheduled"
+    },
+    {
+      "Id": "A2005",
+      "PatientID": "P1005",
+      "Subject": "Ava Martinez",
+      "Doctor": "Dr. Sarah Wilson",
+      "StartTime": "2026-11-24T08:30:00.000Z",
+      "EndTime": "2026-11-24T09:00:00.000Z",
+      "VisitType": "Follow-up",
+      "Status": "Scheduled"
+    },
+    {
+      "Id": "A2007",
+      "PatientID": "P1004",
+      "Subject": "Liam Davis",
+      "Doctor": "Dr. Emily Davis",
+      "StartTime": "2026-11-22T09:30:00.000Z",
+      "EndTime": "2026-11-22T10:00:00.000Z",
+      "VisitType": "Check-up",
+      "Status": "Cancelled"
+    },
+    {
+      "Id": "A2008",
+      "PatientID": "P1006",
+      "Subject": "Ethan Garcia",
+      "Doctor": "Dr. John Smith",
+      "StartTime": "2026-11-21T05:30:00.000Z",
+      "EndTime": "2026-11-21T06:00:00.000Z",
+      "VisitType": "Consultation",
+      "Status": "Completed"
+    },
+    {
+      "Id": "A2009",
+      "PatientID": "P1001",
+      "Subject": "Emma Johnson12",
+      "Doctor": "Dr. John Smith",
+      "StartTime": "2026-11-26T07:30:00.000Z",
+      "EndTime": "2026-11-26T08:00:00.000Z",
+      "VisitType": "Follow-up",
+      "Status": "Scheduled"
+    },
+    {
+      "Id": "A2010",
+      "PatientID": "P1002",
+      "Subject": "Noah Smith",
+      "Doctor": "Dr. Sarah Wilson",
+      "StartTime": "2026-11-20T03:30:00.000Z",
+      "EndTime": "2026-11-20T04:00:00.000Z",
+      "VisitType": "Check-up",
+      "Status": "Completed"
+    },
+    {
+      "PatientID": "P1001",
+      "Subject": "Emma Johnson12",
+      "StartTime": "2026-11-23T13:30:00.000Z",
+      "EndTime": "2026-11-23T14:00:00.000Z",
+      "Doctor": "Dr. John Smith",
+      "VisitType": "Consultation",
+      "Status": "Scheduled",
+      "Id": "A2012",
+      "RecurrenceException": null,
+      "RecurrenceID": null
+    },
+    {
+      "PatientID": "P1009",
+      "Subject": "Test Patient",
+      "StartTime": "2026-11-23T14:30:00.000Z",
+      "EndTime": "2026-11-23T15:00:00.000Z",
+      "Doctor": "Dr. John Smith",
+      "Description": "General Checkup",
+      "VisitType": "Consultation",
+      "Status": "Scheduled",
+      "Id": "A2013",
+      "RecurrenceException": null,
+      "RecurrenceID": null
+    }
+  ],
+  "customers": [
+    {
+      "CustomerID": "C3001",
+      "CustomerName": "Isabella Moore",
+      "PhoneNumber": "555-0101",
+      "PreferredStylist": "Sara Kim",
+      "LastAppointment": "2026-11-20T06:30:00.000Z",
+      "MembershipStatus": "Gold",
+      "CustomerType": "VIP",
+      "PreferredService": "Haircut"
+    },
+    {
+      "CustomerID": "C3002",
+      "CustomerName": "James Taylor",
+      "PhoneNumber": "555-0102",
+      "PreferredStylist": "Leo Rossi",
+      "LastAppointment": "2026-11-16T06:30:00.000Z",
+      "MembershipStatus": "Silver",
+      "CustomerType": "VIP",
+      "PreferredService": "Manicure"
+    },
+    {
+      "CustomerID": "C3003",
+      "CustomerName": "Mia Anderson",
+      "PhoneNumber": "555-0103",
+      "PreferredStylist": "Maya Patel",
+      "LastAppointment": "2026-11-22T06:30:00.000Z",
+      "MembershipStatus": "Platinum",
+      "CustomerType": "VIP",
+      "PreferredService": "Facial"
+    },
+    {
+      "CustomerID": "C3004",
+      "CustomerName": "Benjamin Thomas",
+      "PhoneNumber": "555-0104",
+      "PreferredStylist": "Leo Rossi",
+      "LastAppointment": "2026-11-03T06:30:00.000Z",
+      "MembershipStatus": "None",
+      "CustomerType": "Regular",
+      "PreferredService": "Beard Trim"
+    },
+    {
+      "CustomerID": "C3005",
+      "CustomerName": "Charlotte White",
+      "PhoneNumber": "555-0105",
+      "PreferredStylist": "Jordan Blake",
+      "LastAppointment": "2026-11-13T06:30:00.000Z",
+      "MembershipStatus": "Gold",
+      "CustomerType": "VIP",
+      "PreferredService": "Hair Coloring"
+    },
+    {
+      "CustomerID": "C3006",
+      "CustomerName": "Lucas Harris",
+      "PhoneNumber": "555-0106",
+      "PreferredStylist": "Sara Kim",
+      "LastAppointment": "2026-11-19T06:30:00.000Z",
+      "MembershipStatus": "None",
+      "CustomerType": "Regular",
+      "PreferredService": "Haircut"
+    }
+  ],
+  "bookings": [
+    {
+      "Id": "B4001",
+      "CustomerID": "C3001",
+      "Subject": "Isabella Moore",
+      "Stylist": "Sara Kim",
+      "ServiceType": "Haircut",
+      "Duration": 45,
+      "StartTime": "2026-11-23T03:30:00.000Z",
+      "EndTime": "2026-11-23T04:15:00.000Z",
+      "Status": "Completed"
+    },
+    {
+      "Id": "B4002",
+      "CustomerID": "C3003",
+      "Subject": "Mia Anderson",
+      "Stylist": "Maya Patel",
+      "ServiceType": "Manicure",
+      "Duration": 30,
+      "StartTime": "2026-11-23T04:30:00.000Z",
+      "EndTime": "2026-11-23T05:00:00.000Z",
+      "Status": "In Progress"
+    },
+    {
+      "Id": "B4003",
+      "CustomerID": "C3005",
+      "Subject": "Charlotte White",
+      "Stylist": "Jordan Blake",
+      "ServiceType": "Hair Coloring",
+      "Duration": 120,
+      "StartTime": "2026-11-23T05:30:00.000Z",
+      "EndTime": "2026-11-23T07:30:00.000Z",
+      "Status": "Confirmed"
+    },
+    {
+      "Id": "B4004",
+      "CustomerID": "C3002",
+      "Subject": "James Taylor",
+      "Stylist": "Leo Rossi",
+      "ServiceType": "Beard Trim",
+      "Duration": 20,
+      "StartTime": "2026-11-23T08:30:00.000Z",
+      "EndTime": "2026-11-23T08:50:00.000Z",
+      "Status": "Confirmed"
+    },
+    {
+      "Id": "B4005",
+      "CustomerID": "C3006",
+      "Subject": "Lucas Harris",
+      "Stylist": "Sara Kim",
+      "ServiceType": "Haircut",
+      "Duration": 45,
+      "StartTime": "2026-11-24T04:30:00.000Z",
+      "EndTime": "2026-11-24T05:15:00.000Z",
+      "Status": "Confirmed"
+    },
+    {
+      "Id": "B4006",
+      "CustomerID": "C3003",
+      "Subject": "Mia Anderson",
+      "Stylist": "Maya Patel",
+      "ServiceType": "Facial",
+      "Duration": 60,
+      "StartTime": "2026-11-24T07:30:00.000Z",
+      "EndTime": "2026-11-24T08:30:00.000Z",
+      "Status": "Confirmed"
+    },
+    {
+      "Id": "B4007",
+      "CustomerID": "C3004",
+      "Subject": "Benjamin Thomas",
+      "Stylist": "Leo Rossi",
+      "ServiceType": "Haircut",
+      "Duration": 45,
+      "StartTime": "2026-11-25T09:30:00.000Z",
+      "EndTime": "2026-11-25T10:15:00.000Z",
+      "Status": "Confirmed"
+    },
+    {
+      "Id": "B4008",
+      "CustomerID": "C3001",
+      "Subject": "Isabella Moore",
+      "Stylist": "Jordan Blake",
+      "ServiceType": "Hair Coloring",
+      "Duration": 120,
+      "StartTime": "2026-11-26T03:30:00.000Z",
+      "EndTime": "2026-11-26T05:30:00.000Z",
+      "Status": "Confirmed"
+    },
+    {
+      "Id": "B4009",
+      "CustomerID": "C3002",
+      "Subject": "James Taylor",
+      "Stylist": "Leo Rossi",
+      "ServiceType": "Haircut",
+      "Duration": 45,
+      "StartTime": "2026-11-22T05:30:00.000Z",
+      "EndTime": "2026-11-22T06:15:00.000Z",
+      "Status": "Completed"
+    },
+    {
+      "Id": "B4010",
+      "CustomerID": "C3005",
+      "Subject": "Charlotte White",
+      "Stylist": "Maya Patel",
+      "ServiceType": "Manicure",
+      "Duration": 30,
+      "StartTime": "2026-11-21T10:30:00.000Z",
+      "EndTime": "2026-11-21T11:00:00.000Z",
+      "Status": "Cancelled"
+    },
+    {
+      "Id": "B4011",
+      "CustomerID": "C3006",
+      "Subject": "Lucas Harris",
+      "Stylist": "Sara Kim",
+      "ServiceType": "Facial",
+      "Duration": 60,
+      "StartTime": "2026-11-20T06:30:00.000Z",
+      "EndTime": "2026-11-20T07:30:00.000Z",
+      "Status": "Completed"
+    }
+  ]
+}
