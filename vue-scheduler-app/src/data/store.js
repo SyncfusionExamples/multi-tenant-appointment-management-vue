@@ -2,7 +2,7 @@ import { reactive } from 'vue'
 
 // Single source of truth: src/data/appData.json, served by the /api/data endpoint (see vite.config.js).
 // Every list below is filled from that file by loadData(), and saveData() writes the whole thing back.
-const API = '/api/data'
+const API = `${import.meta.env.BASE_URL}api/data`
 
 // ---------- lists that live in the JSON file ----------
 // Reference lists are plain arrays that are filled in place, so imports stay valid after loadData().
