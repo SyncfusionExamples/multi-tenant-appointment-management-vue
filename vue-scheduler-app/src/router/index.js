@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import ClinicDashboard from '../views/ClinicDashboard.vue'
 import ClinicScheduler from '../views/ClinicScheduler.vue'
@@ -6,7 +6,7 @@ import SalonDashboard from '../views/SalonDashboard.vue'
 import SalonScheduler from '../views/SalonScheduler.vue'
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', component: Home },
     { path: '/clinic', component: ClinicDashboard, meta: { title: 'Patient Management Dashboard' } },
