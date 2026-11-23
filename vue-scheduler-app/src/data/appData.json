@@ -241,6 +241,15 @@
       "DoctorAssigned": "Dr. Emily Davis",
       "LastVisitDate": "2026-11-08T03:30:00.000Z",
       "Status": "Active"
+    },
+    {
+      "PatientID": "P1009",
+      "PatientName": "Test Patient",
+      "Age": 20,
+      "Gender": "Female",
+      "DoctorAssigned": "Dr. John Smith",
+      "LastVisitDate": "2026-11-23T14:30:00.000Z",
+      "Status": "Active"
     }
   ],
   "clinicAppointments": [
@@ -345,6 +354,19 @@
       "Id": "A2012",
       "RecurrenceException": null,
       "RecurrenceID": null
+    },
+    {
+      "PatientID": "P1009",
+      "Subject": "Test Patient",
+      "StartTime": "2026-11-23T14:30:00.000Z",
+      "EndTime": "2026-11-23T15:00:00.000Z",
+      "Doctor": "Dr. John Smith",
+      "Description": "General Checkup",
+      "VisitType": "Consultation",
+      "Status": "Scheduled",
+      "Id": "A2013",
+      "RecurrenceException": null,
+      "RecurrenceID": null
     }
   ],
   "customers": [
@@ -407,26 +429,6 @@
       "MembershipStatus": "None",
       "CustomerType": "Regular",
       "PreferredService": "Haircut"
-    },
-    {
-      "CustomerID": "C3007",
-      "CustomerName": "TEST",
-      "PhoneNumber": "234567",
-      "PreferredStylist": "Sara Kim",
-      "LastAppointment": "2026-11-23T13:30:00.000Z",
-      "CustomerType": "New",
-      "PreferredService": "Haircut",
-      "MembershipStatus": "None"
-    },
-    {
-      "CustomerID": "C3008",
-      "CustomerName": "Sowndharya",
-      "PhoneNumber": "1234",
-      "PreferredStylist": "Leo Rossi",
-      "LastAppointment": "2026-11-23T14:00:00.000Z",
-      "CustomerType": "New",
-      "PreferredService": "Beard Trim",
-      "MembershipStatus": "None"
     }
   ],
   "bookings": [
@@ -550,32 +552,6 @@
       "StartTime": "2026-11-20T06:30:00.000Z",
       "EndTime": "2026-11-20T07:30:00.000Z",
       "Status": "Completed"
-    },
-    {
-      "CustomerID": "C3007",
-      "Subject": "TEST",
-      "StartTime": "2026-11-23T13:30:00.000Z",
-      "EndTime": "2026-11-23T14:15:00.000Z",
-      "Stylist": "Sara Kim",
-      "ServiceType": "Haircut",
-      "Status": "Confirmed",
-      "Id": "B4012",
-      "RecurrenceException": null,
-      "RecurrenceID": null,
-      "Duration": 45
-    },
-    {
-      "CustomerID": "C3008",
-      "Subject": "Sowndharya",
-      "StartTime": "2026-11-23T14:00:00.000Z",
-      "EndTime": "2026-11-23T14:45:00.000Z",
-      "Stylist": "Leo Rossi",
-      "ServiceType": "Hair Coloring",
-      "Status": "Confirmed",
-      "Id": "B4013",
-      "RecurrenceException": null,
-      "RecurrenceID": null,
-      "Duration": 45
     }
   ]
 }

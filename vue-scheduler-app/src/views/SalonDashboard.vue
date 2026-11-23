@@ -25,7 +25,7 @@ import {
 } from '@syncfusion/ej2-vue-charts'
 import { DropDownListComponent as EjsDropdownlist } from '@syncfusion/ej2-vue-dropdowns'
 import { dropdownEdit, lockField } from '../utils/gridEditors'
-import { customers, bookings, services, stylists, membershipOptions, customerTypes, salonDailyTrend, saveCustomer, saveData, isSameDay, fmtDate } from '../data/store'
+import { customers, bookings, services, stylists, membershipOptions, customerTypes, salonDailyTrend, saveCustomer, deleteCustomer, saveData, isSameDay, fmtDate } from '../data/store'
 
 provide('grid', [Page, Sort, Filter, Edit, Toolbar])
 provide('chart', [Category, ColumnSeries, LineSeries, Legend, Tooltip, DataLabel])
@@ -64,7 +64,7 @@ const grid = {
 }
 
 const stylistNames = stylists.map((s) => s.Name)
-const customerEdit = { allowEditing: true, allowAdding: true, allowDeleting: false, mode: 'Dialog' }
+const customerEdit = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' }
 // Dropdown lists for the Customers grid edit dialog, built from the shared store data
 const stylistEdit = dropdownEdit('PreferredStylist', stylistNames)
 const membershipEdit = dropdownEdit('MembershipStatus', membershipOptions)
@@ -74,6 +74,8 @@ const serviceEdit = dropdownEdit('PreferredService', services.map((s) => s.Name)
 const onCustomerActionComplete = (args) => {
   lockField(args, 'CustomerID') // the generated ID can't be typed over
   if (args.requestType === 'save' && args.data) saveCustomer({ ...args.data })
+  // deleting a customer also removes their bookings, so the Scheduler stays in step
+  if (args.requestType === 'delete' && args.data) [].concat(args.data).forEach((c) => deleteCustomer(c.CustomerID))
 }
 // the Service catalog grid edits the services list in place, so just persist it
 const onServiceActionComplete = (args) => {
@@ -161,7 +163,7 @@ const marker = { visible: true, width: 8, height: 8 }
       :filterSettings="grid.filterSettings"
       :pageSettings="grid.pageSettings"
       :editSettings="customerEdit"
-      :toolbar="['Add', 'Edit', 'Search']"
+      :toolbar="['Add', 'Edit', 'Delete', 'Search']"
       :actionBegin="onCustomerActionBegin"
       :actionComplete="onCustomerActionComplete"
     >

@@ -206,3 +206,9 @@ export const saveCustomer = (rec) => {
   syncCustomerBookings()
   return saveData()
 }
+// removes the customer and all of their bookings, so the Scheduler no longer shows them
+export const deleteCustomer = (id) => {
+  customers.list = customers.list.filter((c) => c.CustomerID !== id)
+  bookings.list = bookings.list.filter((b) => b.CustomerID !== id)
+  return saveData()
+}
